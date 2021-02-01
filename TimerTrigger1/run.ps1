@@ -13,7 +13,7 @@ if ($Timer.IsPastDue) {
 Write-Host "PowerShell timer trigger function ran! TIME: $currentUTCtime"
 
 $azModule = Get-Module -Name Az -ListAvailable | Select-Object -First 1
-Write-Host "Az Module version: " $azModule.Version.ToString()
+Write-Host "Az  Module version: " $azModule.Version.ToString()
 $pnpModule = Get-Module -Name PnP.PowerShell -ListAvailable | Select-Object -First 1
-Write-Host "Az Module version: " $pnpModule.Version.ToString()
+Write-Host "PnP Module version: " $pnpModule.Version.ToString()
 
