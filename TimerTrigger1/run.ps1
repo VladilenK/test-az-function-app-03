@@ -12,10 +12,8 @@ if ($Timer.IsPastDue) {
 # Write an information log with the current time.
 Write-Host "PowerShell timer trigger function ran! TIME: $currentUTCtime"
 
-$module = Get-Module -Name Az -ListAvailable | Select-Object -First 1
-Write-Host "Az Module version: " $module.Version.ToString()
+$azModule = Get-Module -Name Az -ListAvailable | Select-Object -First 1
+Write-Host "Az Module version: " $azModule.Version.ToString()
+$pnpModule = Get-Module -Name PnP.PowerShell -ListAvailable | Select-Object -First 1
+Write-Host "Az Module version: " $pnpModule.Version.ToString()
 
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/VladilenK/test-az-function-app-03.git
-git push -u origin main
