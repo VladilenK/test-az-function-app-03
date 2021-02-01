@@ -2,5 +2,6 @@
 # See https://aka.ms/functionsmanageddependency for additional information.
 #
 @{
-    'Az' = '5.*'
+    'Az'             = '5.*'
+    'PnP.PowerShell' = '1.*'
 }
